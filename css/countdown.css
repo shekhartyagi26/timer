@@ -1,0 +1,109 @@
+
+.countdown {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  position: absolute;
+  top: 71%;
+  width: 100%;
+  left: 0;
+}
+
+.countdown > div { display: inline-block; }
+
+.countdown > div > span {
+  display: block;
+  text-align: center;
+}
+
+.countdown-container { 
+  margin: 0 3px; 
+}
+
+.countdown-container .countdown-heading {
+  font-size: 21px;
+  margin: 3px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 60%;
+}
+
+.countdown-container .countdown-value {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  border-radius: 90px;
+  border: 6px solid;
+
+  }
+
+@media(min-width: 785px){
+.countdown-container .countdown-value {
+  font-size: 50px;
+  background: rgba(255, 255, 255, .1);
+  padding: 25px;
+  margin: 1rem;
+  width: 170px;
+  height: 170px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  border-radius: 90px;
+  border: 6px solid;
+
+  }
+}
+.countdown-container .val4{
+  border-color: #7995d5;
+}
+.countdown-container .val3{
+  border-color: #acc742;
+}
+.countdown-container .val1{
+  border-color: #ff9900;
+}
+
+@media(max-width: 785px){
+
+  .countdown-container .countdown-heading {
+  font-size: 16px;
+  margin: 3px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 60%;
+  }
+
+  .countdown {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  left: 0;
+  }
+
+  .countdown-container .countdown-value {
+  font-size: 40px;
+  background: rgba(255, 255, 255, .1);
+  padding: 15px;
+  /*margin: 1rem;*/
+  width: 120px;
+  height: 120px;
+  /*color: #fff;*/
+  /*text-shadow: 2px 2px 2px rgba(0,0,0,0.4);*/
+  /*border-radius: 90px;*/
+  /*border: 6px solid;*/
+  }    
+}
+
+@media(max-width: 500px){
+  .countdown {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  }
+
+  .countdown-container .countdown-value {
+    margin-bottom: 15px;
+  }    
+}
